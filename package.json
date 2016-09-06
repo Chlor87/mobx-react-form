@@ -24,7 +24,8 @@
     "cover": "nyc npm test",
     "coverage:check": "nyc check-coverage --satements 85 --branches 70 --functions 85 --lines 85",
     "coverage:report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "release": "semantic-release pre && npm publish && semantic-release post"
+    "release": "semantic-release pre && npm publish && semantic-release post",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
